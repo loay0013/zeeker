@@ -41,8 +41,8 @@ if(!empty($_POST["data"])) {
     <meta name="copyright" content="Information om copyright">
 
     <!-- Sikrer man kan benytte CSS ved at tilkoble en CSS fil -->
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/styles.css" rel="stylesheet" type="text/css">
 
     <!-- Sikrer den vises korrekt på mobil, tablet mv. ved at tage ift. skærmstørrelse - bliver brugt til responsive websider -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -50,6 +50,7 @@ if(!empty($_POST["data"])) {
 
 <!-- i <body> har man alt indhold på siden som brugeren kan se -->
 <body>
+<!------
 <nav class="col-12">
     <img class="col-6" href="">
     <div>
@@ -57,29 +58,75 @@ if(!empty($_POST["data"])) {
 
         </p>
     </div>
-
 </nav>
+----->
+
 <form method="post" action="insert.php" enctype="multipart/form-data">
-
-    <div class="row justify-content-center m-0">
-
-    <div class="col-12">
-        <div class="form-group m-2">
-            <label for="coupon_code"> <p class="text-dark m-0">Coupon code</p></label>
-            <textarea class="form-control " type="text" name="data[coupon_code]"  id="coupon_code" ></textarea>
-        </div>
-    </div>
-
-    <div class="col-12">
-        <div class="form-group m-2">
-            <label for="coupon_code"> <p class="text-dark m-0">Coupon code</p></label>
-            <textarea class="form-control " type="text" name="data[coupon_code]"  id="coupon_code" ></textarea>
-        </div>
-    </div>
+	<div class="background col-12 d-flex justify-content-center align-items-center">
+		<div class="box d-flex flex-column justify-content-center px-4 py-4">
+			<div class="row justify-content-center m-0">
+				<div class="col-12">
+					<div class="form-group m-2">
+						<label for="coupon_code"> <p class="text-dark m-0">Coupon code</p></label>
+						<input class="form-control" type="text" name="data[coupon_code]"  id="coupon_code" ></input>
+					</div>
+				</div>
 
 
+				<div class="col-12 col-md-6">
+					<div class="form-group m-2">
+						<label for="coupon_code"> <p class="text-dark m-0">Antal gratis måneder</p></label>
+						<div class="dropdown">
+							<button class="dd-btn btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Antal måneder
+							</button>
+							<ul class="dropdown-menu dropdown-menu-dark">
+								<li><a class="dropdown-item active" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+								<li><a class="dropdown-item" href="#">Separated link</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6"></div>
+
+				<div class="col-12 col-md-6 mt-5">
+					<div class="form-group m-2">
+						<label for="coupon_code"> <p class="text-dark m-0">Rabat pris</p></label>
+						<input class="form-control " type="text" name="data[coupon_code]"  id="coupon_code" ></input>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6 mt-5">
+					<div class="form-group m-2">
+						<label for="coupon_code"> <p class="text-dark m-0">Rabat procent</p></label>
+						<input class="form-control " type="text" name="data[coupon_code]"  id="coupon_code" ></input>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6">
+					<div class="form-group m-2">
+						<label for="coupon_code"> <p class="text-dark m-0">Fra dato</p></label>
+						<input class="form-control " type="date" name="data[coupon_code]"  id="coupon_code" ></input>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6">
+					<div class="form-group m-2">
+						<label for="coupon_code"> <p class="text-dark m-0">Til dato</p></label>
+						<input class="form-control " type="date" name="data[coupon_code]"  id="coupon_code" ></input>
+					</div>
+				</div>
+		</div>
+			<div class="col-12 mt-5 mb-5 d-flex justify-content-center">
+				<div class="d-flex justify-content-center align-items-center">
+					<button class="form-control btn btn-primary bg-gradient rounded-0 border-0 " type="submit" id="btn-submit">Submit</button></div>
+			</div>
+	</div>
 </div>
 </form>
 
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

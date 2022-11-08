@@ -31,3 +31,41 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
+
+
+.background {
+	background-color: #F6F8F9;
+	height: 100vh;
+}
+
+.box{
+	height: 600px;
+	width: 867px;
+	border-radius:20px ;
+	box-shadow: 0 3px 60px rgba(0,0,0,5%);
+	background-color: #ffffff;
+}
+
+.form-control {
+	height: 42px;
+	display: block;
+	width: 100%;
+	background-color: #F6F8F9 !important;
+	border-radius: 20px !important;
+	border: none !important;
+	margin-top: 10px;
+}
+
+.dd-btn {
+	width: 100%;
+	border-radius: 20px;
+	margin-top: 12px;
+}
+
+#btn-submit {
+	width: 220px;
+	height: 50px;
+	background-color: #F2B705 !important;
+
+}
