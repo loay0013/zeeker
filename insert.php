@@ -63,19 +63,19 @@ if(!empty($_POST["data"])) {
 
 <form method="post" action="insert.php" enctype="multipart/form-data">
 	<div class="background col-12 d-flex justify-content-center align-items-center">
-		<div class="box d-flex flex-column justify-content-center px-4 py-4">
+		<div class="box d-flex flex-column justify-content-center px-4 py-5">
 			<div class="row justify-content-center m-0">
 				<div class="col-12">
-					<div class="form-group m-2">
-						<label for="coupon_code"> <p class="text-dark m-0">Coupon code</p></label>
-						<input class="form-control" type="text" name="data[coupon_code]"  id="coupon_code" ></input>
+					<div class="form-group m-2 mt-0 mb-3">
+						<label for="coupon_code"> <p class="text-dark m-0 rubrik">Coupon code</p></label>
+						<input class="form-control" type="text" placeholder="Indtast coupon her" name="data[coupon_code]"  id="coupon_code" ></input>
 					</div>
 				</div>
 
 
 				<div class="col-12 col-md-6">
 					<div class="form-group m-2">
-						<label for="coupon_code"> <p class="text-dark m-0">Antal gratis måneder</p></label>
+						<label for="coupon_code"> <p class="text-dark m-0 rubrik">Antal gratis måneder</p></label>
 						<div class="dropdown">
 							<button class="dd-btn btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 								Antal måneder
@@ -92,36 +92,37 @@ if(!empty($_POST["data"])) {
 				<div class="col-md-6"></div>
 
 				<div class="col-12 col-md-6 mt-5">
-					<div class="form-group m-2">
-						<label for="coupon_code"> <p class="text-dark m-0">Rabat pris</p></label>
-						<input class="form-control " type="text" name="data[coupon_code]"  id="coupon_code" ></input>
+					<div class="form-group m-2 mb-4">
+						<label for="coupon_code"> <p class="text-dark m-0 rubrik">Rabat pris</p></label>
+						<input class="form-control" placeholder="Indtast din pris her" type="text" name="data[coupon_code]"  id="coupon_code" ></input>
 					</div>
 				</div>
 
 				<div class="col-12 col-md-6 mt-5">
-					<div class="form-group m-2">
-						<label for="coupon_code"> <p class="text-dark m-0">Rabat procent</p></label>
-						<input class="form-control " type="text" name="data[coupon_code]"  id="coupon_code" ></input>
+					<div class="form-group m-2 mb-4">
+						<label for="coupon_code"> <p class="text-dark m-0 rubrik">Rabat procent</p></label>
+						<input class="form-control" placeholder="Indtast din procent her" type="text" name="data[coupon_code]"  id="coupon_code" ></input>
 					</div>
 				</div>
 
 				<div class="col-12 col-md-6">
 					<div class="form-group m-2">
-						<label for="coupon_code"> <p class="text-dark m-0">Fra dato</p></label>
+						<label for="coupon_code"> <p class="text-dark m-0 rubrik">Fra dato</p></label>
 						<input class="form-control " type="date" name="data[coupon_code]"  id="coupon_code" ></input>
 					</div>
 				</div>
 
 				<div class="col-12 col-md-6">
 					<div class="form-group m-2">
-						<label for="coupon_code"> <p class="text-dark m-0">Til dato</p></label>
-						<input class="form-control " type="date" name="data[coupon_code]"  id="coupon_code" ></input>
+						<label for="coupon_code"> <p class="text-dark m-0 rubrik">Til dato</p></label>
+						<input class="form-control" type="date" name="data[coupon_code]"  id="coupon_code" ></input>
 					</div>
 				</div>
 		</div>
-			<div class="col-12 mt-5 mb-5 d-flex justify-content-center">
+			<div class="col-12 mt-5 d-flex justify-content-center">
 				<div class="d-flex justify-content-center align-items-center">
-					<button class="form-control btn btn-primary bg-gradient rounded-0 border-0 " type="submit" id="btn-submit">Submit</button></div>
+					<button class="form-control btn btn-primary bg-gradient rounded-0 border-0" type="submit" id="btn-submit">Submit</button>
+				</div>
 			</div>
 	</div>
 </div>
