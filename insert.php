@@ -94,28 +94,28 @@ if(!empty($_POST["data"])) {
 				<div class="col-12 col-md-6 mt-5">
 					<div class="form-group m-2 mb-4">
 						<label for="coupon_code"> <p class="text-dark m-0 rubrik">Rabat pris</p></label>
-						<input class="form-control" placeholder="Indtast din pris her" type="text" name="data[coupon_code]"  id="coupon_code" ></input>
+						<input class="form-control" placeholder="Indtast din pris her" type="text" name="data[Fast_discount]"  id="Fast_discount">
 					</div>
 				</div>
 
 				<div class="col-12 col-md-6 mt-5">
 					<div class="form-group m-2 mb-4">
 						<label for="coupon_code"> <p class="text-dark m-0 rubrik">Rabat procent</p></label>
-						<input class="form-control" placeholder="Indtast din procent her" type="text" name="data[coupon_code]"  id="coupon_code" ></input>
+						<input class="form-control" placeholder="Indtast din procent her" type="text" name="data[discount]"  id="discount">
 					</div>
 				</div>
 
 				<div class="col-12 col-md-6">
 					<div class="form-group m-2">
 						<label for="coupon_code"> <p class="text-dark m-0 rubrik">Fra dato</p></label>
-						<input class="form-control " type="date" name="data[coupon_code]"  id="coupon_code" ></input>
+						<input class="form-control " type="date" name="data[Date_discount]"  id="Date_discount">
 					</div>
 				</div>
 
 				<div class="col-12 col-md-6">
 					<div class="form-group m-2">
 						<label for="coupon_code"> <p class="text-dark m-0 rubrik">Til dato</p></label>
-						<input class="form-control" type="date" name="data[coupon_code]"  id="coupon_code" ></input>
+						<input class="form-control" type="date" name="data[Slut_dato]"  id="Slut_dato">
 					</div>
 				</div>
 		</div>
