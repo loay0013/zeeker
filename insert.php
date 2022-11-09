@@ -69,7 +69,7 @@ if(!empty($_POST["data"])) {
 					<div class="form-group m-2">
 						<label for="coupon_code"> <p class="text-dark m-0 rubrik">Antal gratis måneder</p></label>
 						<div class="dropdown">
-                            <select class="dropdown" name="M_discount"  id="M_discount">
+                            <select class="dropdown dd-btn px-2" name="M_discount"  id="M_discount">
                                 <option value="0">Antal gratis måneder</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -87,8 +87,8 @@ if(!empty($_POST["data"])) {
 						<div class="dropdown">
                             <label for="coupon_code">
                                 <p class="text-dark m-0 rubrik">Bindingsperiode</p></label>
-                            <select class="dropdown" name="B_discount"  id="B_discount">
-                                <option value="0">0 måneder</option>
+                            <select class="dropdown dd-btn px-2" name="B_discount"  id="B_discount">
+                                <option value="0">Bindingsperiode</option>
                                 <option value="3">3 måneder</option>
 								<option value="6">6 måneder</option>
 								<option value="9">9 måneder</option>
@@ -106,18 +106,16 @@ if(!empty($_POST["data"])) {
 				</div>
 
 				<div class="col-12 col-md-6 mt-3">
-					<div class="form-group m-2">
-						<label for="coupon_code"> <p class="text-dark m-0 rubrik">Rabat coupon til specifik plan</p></label>
+					<div class="form-group m-2 pb-2">
 						<div class="dropdown">
-							<button class="dd-btn btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Antal måneder
-							</button>
-							<ul class="dropdown-menu dropdown-menu-dark" >
-								<li><a class="dropdown-item active" name="M_discount" id="M_discount" href="">Premium</a></li>
-								<li><a class="dropdown-item" href="#">Entreprise</a></li>
-								<li><a class="dropdown-item" href="#">Premium & Entreprise</a></li>
-
-							</ul>
+							<label for="coupon_code">
+								<p class="text-dark m-0 rubrik">Rabat coupon til specifik plan</p></label>
+							<select class="dropdown dd-btn px-2" name="B_discount"  id="B_discount">
+								<option value="0">Specifik plan</option>
+								<option value="1">Premium</option>
+								<option value="2">Entreprise</option>
+								<option value="3">Premium & Entreprise</option>
+							</select>
 						</div>
 					</div>
 				</div>
