@@ -73,22 +73,60 @@ if(!empty($_POST["data"])) {
 								Antal måneder
 							</button>
 							<ul class="dropdown-menu dropdown-menu-dark" >
-								<li><a class="dropdown-item active" name="M_discount" id="M_discount" href="#">Action</a></li>
-								<li><a class="dropdown-item" href="#"></a></li>
-								<li><a class="dropdown-item" href="#"></a></li>
-								<li><a class="dropdown-item" href="#"></a></li>
-                                <li><a class="dropdown-item" href="#"></a></li>
+								<li><a class="dropdown-item active" name="M_discount" id="M_discount" href="#">1</a></li>
+								<li><a class="dropdown-item" href="#">2</a></li>
+								<li><a class="dropdown-item" href="#">3</a></li>
+								<li><a class="dropdown-item" href="#">4</a></li>
+                                <li><a class="dropdown-item" href="#">5</a></li>
+                                <li><a class="dropdown-item" href="#">6</a></li>
+                                <li><a class="dropdown-item" href="#">Andet</a></li>
 
                             </ul>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6">
-                    <div class="form-group m-2 mb-4">
-                        <label for="coupon_code"> <p class="text-dark m-0 rubrik">CVR nummer</p></label>
-                        <input class="form-control" placeholder="CVR nummer" type="text" name="data[Uses_discount]"  id="Uses_discount">
-                    </div>
-                </div>
+				<div class="col-12 col-md-6">
+					<div class="form-group m-2">
+						<label for="coupon_code"> <p class="text-dark m-0 rubrik">Bindingsperiode</p></label>
+						<div class="dropdown">
+							<button class="dd-btn btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Antal måneder
+							</button>
+							<ul class="dropdown-menu dropdown-menu-dark" >
+								<li><a class="dropdown-item active" name="M_discount" id="M_discount" href="">3 måneder</a></li>
+								<li><a class="dropdown-item" href="#">6 måneder</a></li>
+								<li><a class="dropdown-item" href="#">9 måneder</a></li>
+								<li><a class="dropdown-item" href="#">12 måneder</a></li>
+								<li><a class="dropdown-item" href="#">Andet</a></li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6 mt-5">
+					<div class="form-group m-2 mb-4">
+						<label for="coupon_code"> <p class="text-dark m-0 rubrik">CVR-nummer</p></label>
+						<input class="form-control" placeholder="Indtast CVR-nummer" type="text" name="data[Uses_discount]"  id="Uses_discount">
+					</div>
+				</div>
+
+				<div class="col-12 col-md-6 mt-5">
+					<div class="form-group m-2">
+						<label for="coupon_code"> <p class="text-dark m-0 rubrik">Rabat coupon til specifik plan</p></label>
+						<div class="dropdown">
+							<button class="dd-btn btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Antal måneder
+							</button>
+							<ul class="dropdown-menu dropdown-menu-dark" >
+								<li><a class="dropdown-item active" name="M_discount" id="M_discount" href="">Premium</a></li>
+								<li><a class="dropdown-item" href="#">Entreprise</a></li>
+								<li><a class="dropdown-item" href="#">Premium & Entreprise</a></li>
+
+							</ul>
+						</div>
+					</div>
+				</div>
 
 				<div class="col-12 col-md-6 mt-5">
 					<div class="form-group m-2 mb-4">
@@ -106,7 +144,7 @@ if(!empty($_POST["data"])) {
 
 				<div class="col-12 col-md-6">
 					<div class="form-group m-2">
-						<label for="coupon_code"> <p class="text-dark m-0 rubrik">Fra dato</p></label>
+						<label for="coupon_code"><p class="text-dark m-0 rubrik">Fra dato</p></label>
 						<input class="form-control " type="date" name="data[Date_discount]"  id="Date_discount">
 					</div>
 				</div>
