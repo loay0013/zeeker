@@ -69,37 +69,31 @@ if(!empty($_POST["data"])) {
 					<div class="form-group m-2">
 						<label for="coupon_code"> <p class="text-dark m-0 rubrik">Antal gratis måneder</p></label>
 						<div class="dropdown">
-							<button class="dd-btn btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Antal måneder
-							</button>
-							<ul class="dropdown-menu dropdown-menu-dark" >
-								<li><a class="dropdown-item active" name="M_discount" id="M_discount" href="#">1</a></li>
-								<li><a class="dropdown-item" href="#">2</a></li>
-								<li><a class="dropdown-item" href="#">3</a></li>
-								<li><a class="dropdown-item" href="#">4</a></li>
-                                <li><a class="dropdown-item" href="#">5</a></li>
-                                <li><a class="dropdown-item" href="#">6</a></li>
-                                <li><input class="dropdown-item" href="#">Andet</input></li>
+                            <select class="dropdown" name="M_discount"  id="M_discount">
+                                <option value="0">Antal gratis måneder</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
 
-                            </ul>
+                            </select>
 						</div>
 					</div>
 				</div>
 				<div class="col-12 col-md-6">
 					<div class="form-group m-2">
-						<label for="coupon_code"> <p class="text-dark m-0 rubrik">Bindingsperiode</p></label>
 						<div class="dropdown">
-							<button class="dd-btn btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-								Antal måneder
-							</button>
-							<ul class="dropdown-menu dropdown-menu-dark" >
-								<li><a class="dropdown-item active" name="M_discount" id="M_discount" href="">3 måneder</a></li>
-								<li><a class="dropdown-item" href="#">6 måneder</a></li>
-								<li><a class="dropdown-item" href="#">9 måneder</a></li>
-								<li><a class="dropdown-item" href="#">12 måneder</a></li>
-								<li><a class="dropdown-item" href="#">Andet</a></li>
-
-							</ul>
+                            <label for="coupon_code">
+                                <p class="text-dark m-0 rubrik">Bindingsperiode</p></label>
+                            <select class="dropdown" name="B_discount"  id="B_discount">
+                                <option value="0">0 måneder</option>
+                                <option value="3">3 måneder</option>
+								<option value="6">6 måneder</option>
+								<option value="9">9 måneder</option>
+								<option value="12">12 måneder</option>
+							</select>
 						</div>
 					</div>
 				</div>
