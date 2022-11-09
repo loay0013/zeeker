@@ -33,7 +33,7 @@ if(!empty($_POST["data"])) {
     <meta charset="utf-8">
 
     <!-- Titel som ses oppe i browserens tab mv. -->
-    <title> Zeeker rabat</title>
+    <title> Zeeker | Coupon-system</title>
 
     <!-- Metatags der fortæller at søgemaskiner er velkomne, hvem der udgiver siden og copyright information -->
     <meta name="robots" content="All">
@@ -79,7 +79,7 @@ if(!empty($_POST["data"])) {
 								<li><a class="dropdown-item" href="#">4</a></li>
                                 <li><a class="dropdown-item" href="#">5</a></li>
                                 <li><a class="dropdown-item" href="#">6</a></li>
-                                <li><a class="dropdown-item" href="#">Andet</a></li>
+                                <li><input class="dropdown-item" href="#">Andet</input></li>
 
                             </ul>
 						</div>
@@ -104,14 +104,14 @@ if(!empty($_POST["data"])) {
 					</div>
 				</div>
 
-				<div class="col-12 col-md-6 mt-5">
+				<div class="col-12 col-md-6 mt-3">
 					<div class="form-group m-2 mb-4">
 						<label for="coupon_code"> <p class="text-dark m-0 rubrik">CVR-nummer</p></label>
 						<input class="form-control" placeholder="Indtast CVR-nummer" type="text" name="data[Uses_discount]"  id="Uses_discount">
 					</div>
 				</div>
 
-				<div class="col-12 col-md-6 mt-5">
+				<div class="col-12 col-md-6 mt-3">
 					<div class="form-group m-2">
 						<label for="coupon_code"> <p class="text-dark m-0 rubrik">Rabat coupon til specifik plan</p></label>
 						<div class="dropdown">
@@ -156,11 +156,18 @@ if(!empty($_POST["data"])) {
 					</div>
 				</div>
 		</div>
-			<div class="col-12 mt-5 d-flex justify-content-center">
-				<div class="d-flex justify-content-center align-items-center">
-					<button class="form-control btn btn-primary bg-gradient rounded-0 border-0" type="submit" id="btn-submit">Submit</button>
+			<div class="col-12 col-md-6 d-flex">
+				<div class="col-12 mt-5 d-flex justify-content-center">
+					<div class="d-flex justify-content-center align-items-center">
+						<button class="form-control btn btn-primary bg-gradient rounded-0 border-0" type="submit" id="btn-rabat">Oversigt</button>
+					</div>
 				</div>
-			</div>
+				<div class="col-12 mt-5 d-flex justify-content-center">
+					<div class="d-flex justify-content-center align-items-center">
+						<button class="form-control btn btn-primary bg-gradient rounded-0 border-0" type="submit" id="btn-submit">Submit</button>
+					</div>
+				</div>
+		</div>
 	</div>
 </div>
 </form>
