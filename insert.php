@@ -77,6 +77,7 @@ if(!empty($_POST["data"])) {
                                 <option value="4">4</option>
                                 <option value="5">5</option>
                                 <option value="6">6</option>
+                                <option value="6">Andet</option>
 
                             </select>
 						</div>
@@ -93,6 +94,7 @@ if(!empty($_POST["data"])) {
 								<option value="6">6 måneder</option>
 								<option value="9">9 måneder</option>
 								<option value="12">12 måneder</option>
+								<option value="12">Andet</option>
 							</select>
 						</div>
 					</div>
@@ -101,7 +103,7 @@ if(!empty($_POST["data"])) {
 				<div class="col-12 col-md-6 mt-3">
 					<div class="form-group m-2 mb-4">
 						<label for="coupon_code"> <p class="text-dark m-0 rubrik">CVR-nummer</p></label>
-						<input class="form-control" placeholder="Indtast CVR-nummer" type="text" name="data[Uses_discount]"  id="Uses_discount">
+						<input class="form-control py-0" placeholder="Indtast CVR-nummer" type="text" name="data[Uses_discount]"  id="Uses_discount">
 					</div>
 				</div>
 
