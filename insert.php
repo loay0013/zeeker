@@ -78,7 +78,6 @@ if(!empty($_POST["data"])) {
                                 <option value="5">5</option>
                                 <option value="6">6</option>
                                 <option value="6">Andet</option>
-
                             </select>
 						</div>
 					</div>
