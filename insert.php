@@ -3,8 +3,8 @@ require "settings/init.php";
 if(!empty($_POST["data"])) {
     $data = $_POST["data"];
     $file = $_FILES;
-    if (!empty($file["FilmImg"]["tmp_name"])) {
-        move_uploaded_file($file["FilmImg"]["tmp_name"], "uplods/" . basename($file["FilmImg"]["name"]));
+    if (!empty($file["Img"]["tmp_name"])) {
+        move_uploaded_file($file["Img"]["tmp_name"], "uplods/" . basename($file["Img"]["name"]));
     }
 
     $sql = "INSERT INTO zeeker (coupon_code,discount,Fast_discount,Date_discount,M_discount,B_discount, Uses_discount) values (:coupon_code,:discount,:Fast_discount,:Date_discount, :M_discount, :B_discount,:Uses_discount, :Slut_date)";
@@ -16,8 +16,8 @@ if(!empty($_POST["data"])) {
        <p style='color: white; text-align: center; margin-top: 20%;' >Rabat Kode er nu indsat.<p/>
        <div style='display: flex; justify-content: center;'>
        <button style='display:flex; justify-content:center; padding: 10px '>
-       <a  style='text-decoration: none; color: black;' href='insert.php' >Indsat en film mere</a></button></div>
-       <a style='display: flex; justify-content: center; color: white; padding-top: 20px; text-decoration: none' href='#'>Til Film side</a>
+       <a  style='text-decoration: none; color: black;' href='insert.php' ></a></button></div>
+       <a style='display: flex; justify-content: center; color: white; padding-top: 20px; text-decoration: none' href='#'></a>
        ";
     exit;
 }
@@ -50,16 +50,8 @@ if(!empty($_POST["data"])) {
 
 <!-- i <body> har man alt indhold på siden som brugeren kan se -->
 <body>
-<!------
-<nav class="col-12">
-    <img class="col-6" href="">
-    <div>
-        <p>
 
-        </p>
-    </div>
-</nav>
------>
+
 
 <form method="post" action="insert.php" enctype="multipart/form-data">
 	<div class="background col-12 d-flex justify-content-center align-items-center">
@@ -80,16 +72,23 @@ if(!empty($_POST["data"])) {
 							<button class="dd-btn btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 								Antal måneder
 							</button>
-							<ul class="dropdown-menu dropdown-menu-dark">
-								<li><a class="dropdown-item active" href="#">Action</a></li>
-								<li><a class="dropdown-item" href="#">Another action</a></li>
-								<li><a class="dropdown-item" href="#">Something else here</a></li>
-								<li><a class="dropdown-item" href="#">Separated link</a></li>
-							</ul>
+							<ul class="dropdown-menu dropdown-menu-dark" >
+								<li><a class="dropdown-item active" name="M_discount" id="M_discount" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#"></a></li>
+								<li><a class="dropdown-item" href="#"></a></li>
+								<li><a class="dropdown-item" href="#"></a></li>
+                                <li><a class="dropdown-item" href="#"></a></li>
+
+                            </ul>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6"></div>
+				<div class="col-md-6">
+                    <div class="form-group m-2 mb-4">
+                        <label for="coupon_code"> <p class="text-dark m-0 rubrik">CVR nummer</p></label>
+                        <input class="form-control" placeholder="CVR nummer" type="text" name="data[Uses_discount]"  id="Uses_discount">
+                    </div>
+                </div>
 
 				<div class="col-12 col-md-6 mt-5">
 					<div class="form-group m-2 mb-4">
@@ -115,7 +114,7 @@ if(!empty($_POST["data"])) {
 				<div class="col-12 col-md-6">
 					<div class="form-group m-2">
 						<label for="coupon_code"> <p class="text-dark m-0 rubrik">Til dato</p></label>
-						<input class="form-control" type="date" name="data[Slut_dato]"  id="Slut_dato">
+						<input class="form-control" type="date" name="data[Slut_date]"  id="Slut_date">
 					</div>
 				</div>
 		</div>
