@@ -14,10 +14,11 @@ if(!empty($_POST["data"])) {
 
     echo "<body style='font-size: 2rem; background-color: #000000; '></body>
 
-       <p style='color: white; text-align: center; margin-top: 20%;' >Rabat Kode er nu indsat.<p/>
+       <p style='color: white; text-align: center; margin-top: 20%;' ><p/>
        <div style='display: flex; justify-content: center;'>
        <button style='display:flex; justify-content:center; padding: 10px '>
-       <a  style='text-decoration: none; color: black;' href='insert.php' ></a></button></div>
+       <a  style='text-decoration: none; color: black;' href='insert.php' ></a></button>
+       </div>
        <a style='display: flex; justify-content: center; color: white; padding-top: 20px; text-decoration: none' href='#'></a>
        ";
     exit;

@@ -16,9 +16,19 @@
 </head>
 
 <body>
-
+<div class="container">
+	<div class="coupon"></div>
+	<div class="items"></div>
+</div>
 
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script type="module">
+
+	import coupon from "./js/coupon.js";
+	const coupon = new coupon();
+	coupon.init();
+
+</script>
 </body>
 </html>
