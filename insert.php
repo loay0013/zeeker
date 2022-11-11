@@ -8,8 +8,8 @@ if(!empty($_POST["data"])) {
     }
 
 
-    $sql = "INSERT INTO coupon (CouponCode, ProcentDiscount, FastDiscount, DateDiscount, MonthDiscount, BindDiscount, CvrDiscount, SpecifikDiscount, SlutDiscount) values(:CouponCode, :ProcentDiscount, :FastDiscount, :DateDiscount, :MonthDiscount, :BindDiscount, :CvrDiscount, :SpecifikDiscount, :SlutDiscount)";
-    $bind = [":CouponCode" => $data["CouponCode"], ":ProcentDiscount" => $data["ProcentDiscount"], ":FastDiscount" => $data["FastDiscount"], ":DateDiscount" => $data["DateDiscount"], ":MonthDiscount" => $data["MonthDiscount"], ":BindDiscount" => $data["BindDiscount"], ":CvrDiscount" => $data["CvrDiscount"], ":SpecifikDiscount" => $data["SpecifikDiscount"], ":SlutDiscount" => $data["SlutDiscount"]];
+    $sql = "INSERT INTO coupon (CouponCode, ProcentDiscount, FastDiscount, DateDiscount, MonthDiscount, BindDiscount, CvrDiscount, SpecifikDiscount, SlutDiscount, CouponNavn) values(:CouponCode, :ProcentDiscount, :FastDiscount, :DateDiscount, :MonthDiscount, :BindDiscount, :CvrDiscount, :SpecifikDiscount, :SlutDiscount, :CouponNavn)";
+    $bind = [":CouponCode" => $data["CouponCode"], ":ProcentDiscount" => $data["ProcentDiscount"], ":FastDiscount" => $data["FastDiscount"], ":DateDiscount" => $data["DateDiscount"], ":MonthDiscount" => $data["MonthDiscount"], ":BindDiscount" => $data["BindDiscount"], ":CvrDiscount" => $data["CvrDiscount"], ":SpecifikDiscount" => $data["SpecifikDiscount"], ":SlutDiscount" => $data["SlutDiscount"],  ":CouponNavn" => $data["CouponNavn"]];
     $db->sql($sql, $bind, false);
 
     echo "<body style='font-size: 2rem; background-color: #000000; '></body>
@@ -60,6 +60,14 @@ if(!empty($_POST["data"])) {
 	<div class="background col-12 d-flex justify-content-center align-items-center">
 		<div class="box d-flex flex-column justify-content-center px-4 py-5">
 			<div class="row justify-content-center m-0">
+
+                <div class="col-12">
+                    <div class="form-group m-2 mt-0 mb-3">
+                        <label for="coupon_code"> <p class="text-dark m-0 rubrik">Coupon Navn</p></label>
+                        <input class="form-control" type="text" placeholder="Indtast coupon her" name="data[CouponNavn]"  id="CouponNavn" >
+                    </div>
+                </div>
+
 				<div class="col-12">
 					<div class="form-group m-2 mt-0 mb-3">
 						<label for="coupon_code"> <p class="text-dark m-0 rubrik">Coupon code</p></label>
@@ -74,6 +82,7 @@ if(!empty($_POST["data"])) {
 						<div class="dropdown">
                             <select class="dropdown dd-btn px-2" name="data[MonthDiscount]"  id="MonthDiscount">
                                 <option value="0">Antal gratis måneder</option>
+
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -81,6 +90,7 @@ if(!empty($_POST["data"])) {
                                 <option value="5">5</option>
                                 <option value="6">6</option>
                                 <option value="6">Andet</option>
+
                             </select>
 						</div>
 					</div>
@@ -92,12 +102,14 @@ if(!empty($_POST["data"])) {
                             <label for="BindDiscount">
                                 <p class="text-dark m-0 rubrik">Bindingsperiode</p></label>
                             <select name="data[BindDiscount]" id="BindDiscount" class="dropdown dd-btn px-2">
+
                                 <option  value="0">Bindingsperiode</option>
                                 <option  value="3">3 måneder</option>
 								<option  value="6">6 måneder</option>
 								<option  value="9">9 måneder</option>
 								<option  value="12">12 måneder</option>
 								<option  value="12">Andet</option>
+
 							</select>
 						</div>
 					</div>
