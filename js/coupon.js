@@ -17,16 +17,16 @@ export default class coupons{
         const data = await this.getData();
 
         const row =document.createElement('div');
-        row.classList.add('row','g-4');
+        row.classList.add('row','g-4','pt-5');
 
         for(const  items of data){
             const col = document.createElement('div');
-            col.classList.add('col-12');
+            col.classList.add('col-12', 'rounded-5');
 
             col.innerHTML= `
            
-            <div class="col-12 pt-5 ">
-                <div class="col-12 p-3  bg-box rounded-2 d-flex flex-column  justify-content-center">
+            <div class="col-12  bg-bodyrabatkode rounded-2 ">
+                <div class="col-12 p-3  bg-bodyrabatkode  d-flex flex-column  justify-content-center">
                     <p class="p-2"> Navn:${items.CouponNavn}</p>
                     <p class="p-2">CVR.nr:${items.CvrDiscount} </p>
                     <p class="p-2">Slut dato:${items.SlutDiscount}</p>

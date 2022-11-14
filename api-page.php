@@ -57,7 +57,7 @@
 				<div class="card-body d-flex justify-content-center row text-center">
 					<h5 class="card-title">Coupon-code System</h5>
 					<p class="card-text">En simpel GUI til at generere rabatkoder til Zeekers kunder.</p>
-					<div class="card-button1 d-flex justify-content-center align-items-center"><a href="#" class="card-link card-button2">Gå til system.</a></div>
+					<div class="card-button1 d-flex justify-content-center align-items-center"><a href="index.html" class="card-link card-button2">Gå til system.</a></div>
 				</div>
 			</div>
 		</div>
