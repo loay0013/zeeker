@@ -63,15 +63,22 @@ if(!empty($_POST["data"])) {
 
                 <div class="col-12">
                     <div class="form-group m-2 mt-0 mb-3">
-                        <label for="coupon_code"> <p class="text-dark m-0 rubrik">Coupon Navn</p></label>
-                        <input class="form-control" type="text" placeholder="Indtast coupon her" name="data[CouponNavn]"  id="CouponNavn" >
+                        <label for="coupon_code"> <p class="text-dark m-0 rubrik">Rabatkode-navn</p></label>
+                        <input class="form-control" type="text" placeholder="Indtast rabatkode-navn her" name="data[CouponNavn]"  id="CouponNavn" >
                     </div>
                 </div>
+				<div class="container d-flex justify-content-center align-items-center p-0">
+					<div class="form-group col-12 form-switch button-switch">
+						<input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
+						<label class="form-check-label ps-2" for="flexSwitchCheckDefault">Brug mere end én gang</label>
+					</div>
+				</div>
+
 
 				<div class="col-12">
 					<div class="form-group m-2 mt-0 mb-3">
-						<label for="coupon_code"> <p class="text-dark m-0 rubrik">Coupon code</p></label>
-						<input class="form-control" type="text" placeholder="Indtast coupon her" name="data[CouponCode]"  id="CouponCode" >
+						<label for="coupon_code"> <p class="text-dark m-0 rubrik">Rabatkode</p></label>
+						<input class="form-control" type="text" placeholder="Indtast rabatkode her" name="data[CouponCode]"  id="CouponCode" >
 					</div>
 				</div>
 
