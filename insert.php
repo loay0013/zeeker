@@ -12,14 +12,13 @@ if(!empty($_POST["data"])) {
     $bind = [":CouponCode" => $data["CouponCode"], ":ProcentDiscount" => $data["ProcentDiscount"], ":FastDiscount" => $data["FastDiscount"], ":DateDiscount" => $data["DateDiscount"], ":MonthDiscount" => $data["MonthDiscount"], ":BindDiscount" => $data["BindDiscount"], ":CvrDiscount" => $data["CvrDiscount"], ":SpecifikDiscount" => $data["SpecifikDiscount"], ":SlutDiscount" => $data["SlutDiscount"],  ":CouponNavn" => $data["CouponNavn"]];
     $db->sql($sql, $bind, false);
 
-    echo "<body style='font-size: 2rem; background-color: #000000; '></body>
+    echo "<body style='font-size: 2rem; background-color: #000000;'></body>
 
-       <p style='color: white; text-align: center; margin-top: 20%;' ><p/>
+       <p style='color: white; text-align: center; margin-top: 20%; font-family: Raleway, sans-serif;'>Rabatkode er nu indsat I vores system<p/>
        <div style='display: flex; justify-content: center;'>
-       <button style='display:flex; justify-content:center; padding: 10px '>
-       <a  style='text-decoration: none; color: black;' href='insert.php' ></a></button>
+       <a style='text-decoration: none' href='index.html'>
+       <button style='font-size: 16px; font-weight: 500; color: #1e2125 cursor: pointer; display:flex; border: none; border-radius: 20px; font-family: Raleway, sans-serif; justify-content:center; padding: 10px; height: 60px; width: 200px; background-color: #F2B705FF; align-items: center'>Gå til oversigt</button></a>
        </div>
-       <a style='display: flex; justify-content: center; color: white; padding-top: 20px; text-decoration: none' href='#'></a>
        ";
     exit;
 }
