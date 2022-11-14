@@ -166,22 +166,24 @@ if(!empty($_POST["data"])) {
 				</div>
 		</div>
 
-			<div class="col-12 col-md-6 d-flex">
-				<div class="col-12 mt-5 d-flex justify-content-center">
-					<div class="d-flex justify-content-center align-items-center">
-						<button class="form-control btn btn-primary bg-gradient rounded-0 border-0"  id="btn-rabat">Oversigt</button>
-					</div>
-				</div>
-
-				<div class="col-12 mt-5 d-flex justify-content-center">
+	            <div class="col-12 mt-5 d-flex justify-content-center">
 					<div class="d-flex justify-content-center align-items-center">
 						<button class="form-control btn btn-primary bg-gradient rounded-0 border-0" type="submit" id="btn-submit">Submit</button>
 					</div>
 				</div>
+
 		</div>
 	</div>
 </div>
 </form>
+    <div class="col-12 col-md-6 d-flex">
+        <div class="col-12 mt-5 d-flex justify-content-center">
+            <div class="d-flex justify-content-center align-items-center">
+                <a href="index.html">
+                    <button class="form-control btn btn-primary bg-gradient rounded-0 border-0"  id="btn-rabat">Oversigt</button>
+                 </a>
+            </div>
+        </div>
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>

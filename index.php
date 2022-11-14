@@ -10,13 +10,13 @@ $coupon = $db->sql("SELECT * FROM `coupon` WHERE couponId=1");
     <meta charset="utf-8">
     <?php
 
-    foreach ($coupon as $coupon){
+    foreach ($coupon as $coupons){
     ?>
 
 
 
 
-    <title></title>
+    <title>Rabatkode Info</title>
 
     <meta name="robots" content="All">
     <meta name="author" content="Udgiver">
@@ -27,7 +27,10 @@ $coupon = $db->sql("SELECT * FROM `coupon` WHERE couponId=1");
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
-<body class="bg-dark">
+<body>
+
+
+
 
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
