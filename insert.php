@@ -12,7 +12,7 @@ if(!empty($_POST["data"])) {
     $bind = [":CouponCode" => $data["CouponCode"], ":ProcentDiscount" => $data["ProcentDiscount"], ":FastDiscount" => $data["FastDiscount"], ":DateDiscount" => $data["DateDiscount"], ":MonthDiscount" => $data["MonthDiscount"], ":BindDiscount" => $data["BindDiscount"], ":CvrDiscount" => $data["CvrDiscount"], ":SpecifikDiscount" => $data["SpecifikDiscount"], ":SlutDiscount" => $data["SlutDiscount"], ":CouponNavn" => $data["CouponNavn"]];
     $db->sql($sql, $bind, false);
 
-    echo "<body style='font-size: 2rem; background-color: #000000;'></body>
+    echo "<body style='font-size: 2rem; background-color: €;'></body>
 
        <p style='color: white; text-align: center; margin-top: 20%; font-family: Raleway, sans-serif;'>Rabatkode er nu indsat I vores system<p/>
        <div style='display: flex; justify-content: center;'>
