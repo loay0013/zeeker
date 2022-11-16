@@ -9,7 +9,7 @@ if(!empty($_POST["data"])) {
 
 
     $sql = "INSERT INTO coupon (CouponCode, ProcentDiscount, FastDiscount, DateDiscount, MonthDiscount, BindDiscount, CvrDiscount, SpecifikDiscount, SlutDiscount, CouponNavn) values(:CouponCode, :ProcentDiscount, :FastDiscount, :DateDiscount, :MonthDiscount, :BindDiscount, :CvrDiscount, :SpecifikDiscount, :SlutDiscount, :CouponNavn)";
-    $bind = [":CouponCode" => $data["CouponCode"], ":ProcentDiscount" => $data["ProcentDiscount"], ":FastDiscount" => $data["FastDiscount"], ":DateDiscount" => $data["DateDiscount"], ":MonthDiscount" => $data["MonthDiscount"], ":BindDiscount" => $data["BindDiscount"], ":CvrDiscount" => $data["CvrDiscount"], ":SpecifikDiscount" => $data["SpecifikDiscount"], ":SlutDiscount" => $data["SlutDiscount"],  ":CouponNavn" => $data["CouponNavn"]];
+    $bind = [":CouponCode" => $data["CouponCode"], ":ProcentDiscount" => $data["ProcentDiscount"], ":FastDiscount" => $data["FastDiscount"], ":DateDiscount" => $data["DateDiscount"], ":MonthDiscount" => $data["MonthDiscount"], ":BindDiscount" => $data["BindDiscount"], ":CvrDiscount" => $data["CvrDiscount"], ":SpecifikDiscount" => $data["SpecifikDiscount"], ":SlutDiscount" => $data["SlutDiscount"], ":CouponNavn" => $data["CouponNavn"]];
     $db->sql($sql, $bind, false);
 
     echo "<body style='font-size: 2rem; background-color: #000000;'></body>
@@ -171,25 +171,24 @@ if(!empty($_POST["data"])) {
 					</div>
 				</div>
 		</div>
-
-	            <div class="col-12 mt-5 d-flex justify-content-center">
+                <div class="col-12 d-flex ">
+	            <div class="col-6 mt-5 d-flex justify-content-center">
 					<div class="d-flex justify-content-center align-items-center">
 						<button class="form-control btn btn-primary bg-gradient rounded-0 border-0" type="submit" id="btn-submit">Submit</button>
 					</div>
 				</div>
 
-		</div>
+                <div class="col-6 mt-5 d-flex justify-content-center">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a class="text-decoration-none" href="index.html">
+                            <button class="form-control btn btn-primary bg-gradient rounded-0 border-0" type="button"  id="btn-rabat">Oversigt</button>
+                        </a>
+                    </div>
+                </div>
+                </div>
 	</div>
 </div>
 </form>
-    <div class="col-12 col-md-6 d-flex">
-        <div class="col-12 mt-5 d-flex justify-content-center">
-            <div class="d-flex justify-content-center align-items-center">
-                <a href="index.html">
-                    <button class="form-control btn btn-primary bg-gradient rounded-0 border-0"  id="btn-rabat">Oversigt</button>
-                 </a>
-            </div>
-        </div>
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
